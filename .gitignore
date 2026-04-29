@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Hardhat
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Vite / React
+dist/
+dist-ssr/
+*.local
+
+# Environment variables
+.env
+.env.test
+.env.production
+.env.local
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Contract Addresses / ABIs (Optional, but often good practice not to commit local testnet addresses)
+# For this educational project, we might actually want contract_info.json in the repo if it's part of the demo instructions,
+# but strictly speaking, build artifacts shouldn't be tracked. 
+# We will track them here for ease of use in the demo, so I am NOT ignoring contract_info.json
+
+# Seeder
+seeder/fake_emails.txt

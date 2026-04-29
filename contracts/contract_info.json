@@ -1,0 +1,172 @@
+{
+  "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "hashValue",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "sourceName",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "reportedBy",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "reportedAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "BreachReported",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "allReportedHashes",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "checkHash",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "found",
+          "type": "bool"
+        },
+        {
+          "internalType": "string",
+          "name": "source",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reportedAt",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_offset",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRecentHashes",
+      "outputs": [
+        {
+          "internalType": "bytes32[20]",
+          "name": "recentHashes",
+          "type": "bytes32[20]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalCount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalBreaches",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "leaks",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "sourceName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reportedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "reportedBy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_hash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "_source",
+          "type": "string"
+        }
+      ],
+      "name": "reportBreach",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "network": "hardhat-localhost",
+  "chainId": 31337,
+  "deployedAt": "2026-04-29T07:47:08.961Z",
+  "deployedBy": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+}
